@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Tai+Heritage+Pro&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: auto;
+    width: 100%;
+    background-color: hsl(210, 36%, 96%);
+    font-family: 'Tai Heritage Pro', serif;
+}
+
+.container{
+    height: auto;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.container .container-title{
+    font-size: 2rem;
+    letter-spacing: .2rem;
+    font-weight: bolder;
+}
+
+.container .container-sep{
+    width: 80px;
+    height: 5px;
+    border-radius: 2px;
+    background-color:hsl(205, 78%, 60%);
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.container .items-container{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .items-container .item{
+    background-color:  #fff;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 40px;
+    height: fit-content;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: .3s ease box-shadow;
+}
+
+
+.container .items-container:last-child{
+    margin-bottom: 100px;
+}
+
+
+.container .items-container .item:hover{
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.container .items-container .item .item-up{
+    height: 20rem;
+    width: 100%;
+}
+
+.container .items-container .item .item-up img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.container .items-container .item .item-down{
+    padding: 10px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .items-container .item .item-down .item-down-header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container .items-container .item .item-down .item-down-header .item-down-title{
+    letter-spacing: .1rem;
+    font-size: 1.2rem;
+}
+
+.container .items-container .item .item-down .item-down-header .item-down-price{
+    height: 1.8rem;
+    width: 5rem;
+    font-size: 1rem;
+    display: flex;
+    letter-spacing: .13rem;
+    align-items: center;
+    font-weight: bolder;
+    margin-top: 5px;
+    justify-content: center;
+    border-radius: 8px;
+    color: #49a6e9;
+    background-color: #c5e5fc;
+}
+
+.container .items-container .item .item-down .item-down-info{
+    margin-top: 15px;
+}
+
+.container .items-container .item .item-down .item-down-info p{
+    color: #617d98;
+    line-height: 1.7rem;
+    font-weight: 550;
+}
+
+.container .items-container .item .item-down .item-down-info .toggle{
+    color: #49a6e9;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.container .items-container .item .item-down .item-down-info .toggle:hover{
+    text-decoration: underline;
+}
+
+
+.container .items-container .item .item-down .item-down-button-wrapper{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+}
+
+.container .items-container .item .item-down .item-down-button{
+    height: 35px;
+    width: 200px;
+    background-color: transparent;
+    border: 1px solid #bb2525;
+    border-radius: 10px;
+    color: #bb2525;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: .3s ease background-color;
+}
+
+
+.container .items-container .item .item-down .item-down-button:hover{
+    background-color: whitesmoke;
+}
